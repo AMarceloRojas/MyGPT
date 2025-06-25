@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>MyGpt</title>
 </head>
     <body>
-      <h1>MyGPT</h1>
+      <main>
+        <ul></ul>
+      </main>
+
+      <form>
+        <input name="message" placeholder=" Escribe tu mensaje ...">
+        <button disabled>Enviar</button>
+      </form>
+      <small>&nbsp;</small>
+      <template id="message-template">
+        <li class="message">
+          <span></span>
+          <p></p>
+        </li>
+      </template>
+      <script type="module" src="./js/script.js"></script>
     </body>
 </html>
