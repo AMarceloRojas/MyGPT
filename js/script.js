@@ -18,7 +18,7 @@ const $info = $('small')
 
 let messages = []
 
-const SELECTED_MODEL = 'Llama-3.2-3B-Instruct-q4f32_1-MLC'
+const SELECTED_MODEL = 'Llama-3.2-1B-Instruct-q4f16_1-MLC'
 
 
 let dots = ''
