@@ -7,10 +7,50 @@
     <title>MyGpt</title>
 </head>
     <body>
-      <main>
+      <div id="loader-container">
+          <div class="loader"></div>
+              <p class="loading-text" data-glitch="Cargando modelo...">Cargando modelo...</p>
+          <div class="progress-bar">
+            <div class="progress" id="progress-bar"></div>
+          </div>
+      </div>
+      <section class="container">
+    <div class="card-container">
+      <div class="card-content">
+        <div class="card-title">
+          <span class="title">Asistente IA</span>
+        </div>
+        <div class="card-body">
+          <div class="svg-card">
+            <a href="https://github.com/AMarceloRojas" target="_blank">
+            <img src="/images/icons8-github-200.png" alt="github" class="icon"/>
+            </a>
+          </div>
+          <div class="svg-card">
+            <a href="https://www.linkedin.com/in/anthonny-marcelo-rojas-b66b22311/" target="_blank">
+            <img src="/images/icons8-linkedin-144.png" alt="linkedin" class="icon"/>
+            </a>
+          </div>
+          <div class="svg-card">
+            <a href="https://www.instagram.com/kay_trsh/" target="_blank">
+            <img src="/images/icono-instagram.png" alt="Instagram" class="icon"/>
+            </a>
+          </div>
+          <div class="svg-card">
+            <a href="https://wa.me/51939236024" target="_blank">
+            <img src="/images/icons8-whatsapp-500.png" alt="WhatsApp" class="icon"/>
+            </a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="title">¡Contacto!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+      <main class="chat-box">
         <ul></ul>
       </main>
-
       <form>
         <input name="message" placeholder=" Escribe tu mensaje ...">
         <button disabled>Enviar</button>
@@ -18,7 +58,7 @@
       <small>&nbsp;</small>
       <template id="message-template">
         <li class="message">
-          <span></span>
+          <span class="avatar"></span>
           <p></p>
         </li>
       </template>
